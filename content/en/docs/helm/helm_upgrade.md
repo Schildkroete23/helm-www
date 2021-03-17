@@ -74,7 +74,7 @@ helm upgrade [RELEASE] [CHART] [flags]
       --username string              chart repository username where to locate the requested chart
   -f, --values strings               specify values in a YAML file or a URL (can specify multiple)
       --verify                       verify the package before using it
-      --version string               specify the exact chart version to use. If this is not specified, the latest version is used
+      --version string               specify the [version constraint](https://github.com/Masterminds/semver#checking-version-constraints) for the chart version to use. If this is not specified, the latest version is used
       --wait                         if set, will wait until all Pods, PVCs, Services, and minimum number of Pods of a Deployment, StatefulSet, or ReplicaSet are in a ready state before marking the release as successful. It will wait for as long as --timeout
       --wait-for-jobs                if set and --wait enabled, will wait until all Jobs have been completed before marking the release as successful. It will wait for as long as --timeout
 ```
